@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+/* 補助フレーム ここから 必要に応じて削除する */
+body {
+  align-items: center;
+  background: #eee;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.wrap {
+  background: #fff url(./images/device-meu.png) top left no-repeat;
+  background-size: contain;
+  box-shadow: 0 0 40px #999;
+  border-radius: 15px;
+  width: 411px;
+  height: 667px;
+  overflow: hidden;
+  padding-top: 33px;
+  position: relative;
+}
+
+.design-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  opacity: 0.3;
+}
+
+/* 補助フレーム ここまで */
