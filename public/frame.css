@@ -16,7 +16,7 @@ body {
   border-radius: 15px;
   width: 411px;
   height: 667px;
-  overflow: hidden;
+  overflow: scroll;
   padding-top: 33px;
   position: relative;
 }
