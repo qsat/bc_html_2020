@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Messenge Applicarion</title>
+  <!-- リセットCSSの読み込み -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <!-- CSSの読み込み -->
+  <link rel="stylesheet" href="../frame.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <!-- 補助フレーム  -->
+  <div class="wrap">
+  <!-- // 補助フレーム  -->
+
+  <!-- マークアップここから -->
+  Hello!!
+  <header>
+    <h1>チャット</h1>
+    <button>
+      <span class="avatar"><img src="../images/avatars/a1.jpg" alt=""></span>
+    </button>
+    <ul class="actions">
+      <li>
+        <button class="icon-button"><img src="../images/icons/camera.svg" alt="写真の投稿" width="23"></button>
+      </li>
+      <li>
+        <button class="icon-button"><img src="../images/icons/pen.svg" alt="メッセージの作成" width="23"></button>
+      </li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- 検索ボックス -->
+    <section class="search">
+      <input type="search" placeholder="検索">
+    </section>
+    <!--// 検索ボックス -->
+
+    <!-- オンラインユーザー -->
+    <section>
+      <button class="icon-button icon-button-big">
+        <img src="../images/icons/plus.svg" width="23" alt="ストーリー作成">
+        <span class="icon-button__label">ストーリー作成</span>
+      </button>
+      <ol class="friends">
+       <li>
+         <button>
+           <span class="user user--online">
+             <span class="avatar user__avatar">
+              <img src="../images/avatars/a2.jpg" alt="">
+             </span>
+             <span class="user__name">太郎</span>
+           </span>
+         </button>
+       </li>
+      </ol>
+    </section>
+    <!--// オンラインユーザー -->
+
+    <!-- チャット一覧 -->
+    <ol class="rooms">
+      <!-- チャットルーム -->
+      <li class="room room--unread">
+        <a href="#">
+          <span class="avater room__avatar">
+            <img src="../images/avatars/a2.jpg" alt="">
+          </span>
+          <span class="room-info">
+            <span class="room-info__name">早乙女智也</span>
+            <span class="room-info__latest-message">メッセージメッセージ</span>
+          </span>
+          <span class="room__latest-message-date">3月26日</span>
+        <a>
+      </li>
+      <!--// チャットルーム -->
+    </ol>
+    <!--// チャット一覧 -->
+
+  </main>
+
+  <nav></nav>
+  <!--// マークアップここまで -->
+
+  <!-- デザイン確認用レイヤー コメントアウトすると半透明にデザインを重ねて確認できます 
+  <p class="design-layer"><img src="../design.png" alt="" width="414"></p>
+  -->
+  <!-- 補助フレーム  -->
+  </div>
+  <!-- // 補助フレーム  -->
+</body>
+</html>
