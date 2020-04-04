@@ -1,3 +1,303 @@
 @charset "utf-8";
 
+/* header */
+
+.header {
+  height: 36px;
+  padding: 12px 12px 12px 76px;
+  background: white;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+  display: flex;
+  align-items: center;
+
+  position: sticky;
+  z-index: 1;
+  top: 35px;
+}
+
+.header__title {
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.header__profile {
+  position: absolute;
+  top: 5px;
+  left: 14px;
+}
+
+.header__actions {
+  position: absolute;
+  right: 14px;
+  display: flex;
+}
+
+.actions__action {
+  margin-left: 20px;
+}
+
+/* search box */
+
+.search {
+  margin: 10px 20px;
+}
+
+.search__input {
+  background: #f0f0f0 url(../images/icons/search.svg) 18px center no-repeat;
+  background-size: 15px 15px;
+  border: none;
+  border-radius: 24px;
+  width: 100%;
+  font-size: 18px;
+  padding: 12px;
+  padding-left: 46px;
+}
+
+/* utility */
+
+.utility {
+  margin: 16px 0;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+.utility-list {
+  display: flex;
+  align-items: center;
+}
+
+.utility-list > li {
+  margin-right: 20px;
+}
+
+.utility-list > .utility-list__create-story {
+  margin-right: 30px;
+}
+
+.create-story,
+.user {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.create-story {
+  width: 50px;
+  color: #999;
+}
+
+.user {
+  width: 60px;
+  position: relative;
+}
+
+.user--online::before {
+  display: block;
+  content: " ";
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  border-radius: 9px;
+  background: green;
+  box-sizing: border-box;
+  border: 3px white solid;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+}
+
+/* rooms */
+.rooms > li {
+  margin-bottom: 15px;
+}
+
+.room {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.room__avatar {
+  flex-shrink: 0;
+}
+
+.room__info {
+  width: calc(100% - 70px);
+  margin-left: 10px;
+}
+
+.room--unread .room__info {
+  width: calc(100% - 100px);
+  font-weight: bold;
+}
+
+.room-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-info__name {
+  color: black;
+  margin-bottom: 0.2em;
+  font-size: 16px;
+}
+
+.room-info__unread {
+  display: none;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #009eff;
+  margin-left: 14px;
+}
+
+.room--unread .room-info__unread {
+  display: inline-block;
+}
+
+.room-info-description {
+  display: flex;
+  align-items: center;
+}
+
+.room-info-description__latest-message {
+  color: #999;
+  display: inline-block;
+  width: 100%;
+  /* 省略表示 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.room-info-description__last-updated-at {
+  color: #999;
+  font-size: 15px;
+  display: inline-block;
+  min-width: 5.5em;
+}
+
+.room-info-description__latest-message,
+.room--unread .room-info-description__last-updated-at {
+  color: black;
+}
+
+/* nav */
+
+.navigation {
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #eee;
+}
+
+.navigaton__item {
+  width: 50%;
+  opacity: 0.4;
+}
+
+.navigaton__item--active {
+  opacity: 1;
+}
+
+.nav-button {
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+}
+.nav-button__count {
+  position: absolute;
+  top: -4px;
+  right: calc(50% - 25px);
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+
+  border: 3px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: white;
+  background: red;
+}
+
+.nav-button__label {
+  font-size: 13px;
+}
+
+/* commons */
+
+.icon-button,
+.action-button {
+  appearance: none;
+  -webkit-appearance: none;
+  background: #eee;
+  border: none;
+  outline: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-button {
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.icon-button--mid{
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 28px;
+}
+
+.icon-button--big {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.icon-button__label {
+  display: inline-block;
+  width: 100%;
+  font-size: 13px;
+  /* 省略表示 */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.action-button {
+  width: 38px;
+  height: 38px;
+  overflow: hidden;
+  border-radius: 19px;
+}
+
 /* CSS */

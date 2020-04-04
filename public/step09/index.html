@@ -16,17 +16,17 @@
   <!-- // 補助フレーム  -->
 
   <!-- マークアップここから -->
-  <header>
-    <h1>チャット</h1>
-    <button>
-      <span class="avatar"><img src="../images/avatars/a1.jpg" alt=""></span>
+  <header class="header">
+    <h1 class="header__title">チャット</h1>
+    <button class="header__profile icon-button">
+      <span class="avatar"><img src="../images/avatars/a9.jpg" width="50" alt=""></span>
     </button>
-    <ul class="actions">
-      <li>
-        <button class="icon-button"><img src="../images/icons/camera.svg" alt="写真の投稿" width="23"></button>
+    <ul class="header__actions actions">
+      <li class="actions__action">
+        <button class="action-button"><img src="../images/icons/camera.svg" alt="写真の投稿" width="20"></button>
       </li>
-      <li>
-        <button class="icon-button"><img src="../images/icons/pen.svg" alt="メッセージの作成" width="23"></button>
+      <li class="actions__action">
+        <button class="action-button"><img src="../images/icons/pen.svg" alt="メッセージの作成" width="16"></button>
       </li>
     </ul>
   </header>
@@ -34,27 +34,69 @@
   <main>
     <!-- 検索ボックス -->
     <section class="search">
-      <input type="search" placeholder="検索">
+      <input type="search" class="search__input" placeholder="検索">
     </section>
     <!--// 検索ボックス -->
 
     <!-- オンラインユーザー -->
-    <section>
-      <button class="icon-button icon-button-big">
-        <img src="../images/icons/plus.svg" width="23" alt="ストーリー作成">
-        <span class="icon-button__label">ストーリー作成</span>
-      </button>
-      <ol class="friends">
-       <li>
-         <button>
-           <span class="user user--online">
-             <span class="avatar user__avatar">
-              <img src="../images/avatars/a2.jpg" alt="">
-             </span>
-             <span class="user__name">太郎</span>
-           </span>
-         </button>
-       </li>
+    <section class="utility">
+      <ol class="utility-list">
+        <li class="utility-list__create-story">
+          <button class="create-story">
+            <span class="icon-button icon-button--mid">
+              <img src="../images/icons/plus.svg" width="31" alt="ストーリー作成">
+            </span>
+            <span class="icon-button__label">ストーリー作成</span>
+          </button>
+        </li>
+        <li class="utility-list__user">
+          <button class="user">
+            <span class="icon-button icon-button--big">
+              <img src="../images/avatars/a2.jpg" width="70" alt="">
+            </span>
+            <span class="user__name">太郎</span>
+          </button>
+        </li>
+        <li class="utility-list__user">
+          <button class="user user--online">
+            <span class="icon-button icon-button--big">
+              <img src="../images/avatars/a2.jpg" width="70" alt="">
+            </span>
+            <span class="user__name">太郎</span>
+          </button>
+        </li>
+        <li class="utility-list__user">
+          <button class="user user--online">
+            <span class="icon-button icon-button--big">
+              <img src="../images/avatars/a2.jpg" width="70" alt="">
+            </span>
+            <span class="user__name">太郎</span>
+          </button>
+        </li>
+        <li class="utility-list__user">
+          <button class="user">
+            <span class="icon-button icon-button--big">
+              <img src="../images/avatars/a2.jpg" width="70" alt="">
+            </span>
+            <span class="user__name">太郎</span>
+          </button>
+        </li>
+        <li class="utility-list__user">
+          <button class="user">
+            <span class="icon-button icon-button--big">
+              <img src="../images/avatars/a2.jpg" width="70" alt="">
+            </span>
+            <span class="user__name">太郎</span>
+          </button>
+        </li>
+        <li class="utility-list__user">
+          <button class="user">
+            <span class="icon-button icon-button--big">
+              <img src="../images/avatars/a2.jpg" width="70" alt="">
+            </span>
+            <span class="user__name">太郎</span>
+          </button>
+        </li>
       </ol>
     </section>
     <!--// オンラインユーザー -->
@@ -62,45 +104,35 @@
     <!-- チャット一覧 -->
     <ol class="rooms">
       <!-- チャットルーム -->
-      <li class="room room--unread">
-        <a href="#">
-          <span class="avater room__avatar">
-            <img src="../images/avatars/a3.jpg" alt="">
+      <li>
+        <a href="#" class="room room--unread">
+          <span class="room__avatar icon-button icon-button--big">
+            <img src="../images/avatars/a3.jpg" alt="" width="70">
           </span>
-          <span class="room-info">
+          <span class="room__info room-info">
             <span class="room-info__name">早乙女智也</span>
-            <span class="room-info__latest-message">メッセージメッセージ</span>
+            <span class="room-info__description room-info-description">
+              <span class="room-info-description__latest-message"> メッセージメッセージ メッセージメッセージ メッセージメッセージ メッセージメッセージ </span>
+              <span class="room-info-description__last-updated-at">・3月26日</span>
+            </span>
           </span>
-          <span class="room__latest-message-date">3月26日</span>
-        <a>
+          <span class="room-info__unread"></span>
+        </a>
       </li>
-      <!--// チャットルーム -->
-      <!-- チャットルーム -->
-      <li class="room room--unread">
-        <a href="#">
-          <span class="avater room__avatar">
-            <img src="../images/avatars/a4.jpg" alt="">
+      <li>
+        <a href="#" class="room">
+          <span class="room__avatar icon-button icon-button--big">
+            <img src="../images/avatars/a4.jpg" alt="" width="70">
           </span>
-          <span class="room-info">
+          <span class="room__info room-info">
             <span class="room-info__name">早乙女智也</span>
-            <span class="room-info__latest-message">メッセージメッセージ</span>
+            <span class="room-info__description room-info-description">
+              <span class="room-info-description__latest-message"> メッセージメッセージ メッセージメッセージ メッセージメッセージ メッセージメッセージ </span>
+              <span class="room-info-description__last-updated-at">・3月26日</span>
+            </span>
           </span>
-          <span class="room__latest-message-date">3月26日</span>
-        <a>
-      </li>
-      <!--// チャットルーム -->
-      <!-- チャットルーム -->
-      <li class="room room--unread">
-        <a href="#">
-          <span class="avater room__avatar">
-            <img src="../images/avatars/a5.jpg" alt="">
-          </span>
-          <span class="room-info">
-            <span class="room-info__name">早乙女智也</span>
-            <span class="room-info__latest-message">メッセージメッセージ</span>
-          </span>
-          <span class="room__latest-message-date">3月26日</span>
-        <a>
+          <span class="room-info__unread"></span>
+        </a>
       </li>
       <!--// チャットルーム -->
     </ol>
@@ -108,22 +140,24 @@
 
   </main>
 
-  <nav>
-    <button class="nav-button nav-button--active">
-      <span class="nav-button__count nav-button__count--important">8</span>
+  <nav class="navigation">
+
+    <button class="navigaton__item navigaton__item--active nav-button">
+      <span class="nav-button__count">8</span>
       <img src="../images/icons/message.svg" alt="" width="32">
       <span class="nav-button__label">チャット</span>
     </button>
-    <button class="nav-button">
+
+    <button class="navigaton__item nav-button">
       <span class="nav-button__count">7</span>
       <img src="../images/icons/friends.svg" alt="" width="32">
       <span class="nav-button__label">友達</span>
     </button>
+
   </nav>
   <!--// マークアップここまで -->
 
   <!-- デザイン確認用レイヤー コメントアウトすると半透明にデザインを重ねて確認できます 
-  <p class="design-layer"><img src="../design.png" alt="" width="414"></p>
   -->
   <!-- 補助フレーム  -->
   </div>

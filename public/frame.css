@@ -10,15 +10,24 @@ body {
 }
 
 .wrap {
-  background: #fff url(./images/device-meu.png) top left no-repeat;
-  background-size: contain;
+  background: #fff;
   box-shadow: 0 0 40px #999;
   border-radius: 15px;
   width: 411px;
   height: 667px;
   overflow: scroll;
-  padding-top: 33px;
   position: relative;
+}
+.wrap::before {
+  position: sticky;
+  top: 0;
+  content: " ";
+  display: block;
+  width: 411px;
+  height: 35px;
+  background: #fff url(./images/device-meu.png) top left no-repeat;
+  background-size: contain;
+  z-index: 100;
 }
 
 .design-layer {
