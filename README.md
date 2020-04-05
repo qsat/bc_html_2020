@@ -34,6 +34,7 @@
 
 - public/design2.png: このデザインをHTML/CSSで作成します
   - index.html の末尾にある `デザイン確認用レイヤー` のコメントアウトをはずすとデザインがオーバーレイ表示されるので、デザインの確認に使ってください。
+  - https://github.com/qsat/bc_html_2020/blob/master/public/step0/index.html#L22-L24
 - public/images/icons: 作業で使用するアイコンファイル
 - public/images/avatars: 作業で使用するユーザーのダミー画像
 - `#000`: テキストカラー2
