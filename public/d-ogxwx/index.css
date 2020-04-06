@@ -1,3 +1,75 @@
 @charset "utf-8";
 
 /* CSS */
+header {
+    height: 36px;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    align-items: center;
+}
+
+header .header-left {
+    width: 20%;
+    display: flex;
+}
+
+header .header-left .profile {
+    border: none;
+    border-radius: 25px;
+}
+
+
+header .header-center {
+    width: 50%;
+    display: flex;
+}
+
+header .header-right {
+    width: 30%;
+    display: flex;
+}
+
+header .header-right ul {
+    display:flex;
+}
+
+header .header-right ul .post-movie {
+    border: none;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+
+    background-color: #F5F5F5;
+}
+
+header .header-right ul .post-message {
+    border: none;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+
+    background-color: #F5F5F5;
+}
+
+
+header .header-right {
+    float: right;
+}
+
+
+header .header-left img {
+    border: none;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 26px;
+}
