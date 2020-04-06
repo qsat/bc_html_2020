@@ -85,10 +85,12 @@ header .profile-icon-button{
     justify-content: space-between;
     margin: 0px 15px;
 }
+
 .talk-friends{
     height: 100px;
     width: 400px;
 }
+
 .footer_action{
     height: 100px;
     width: 200px;
