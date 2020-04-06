@@ -19,23 +19,59 @@
   <main>
     <header>
       <button class="profile-icon-button">
-        <span><img src="../images/avatars/a11.jpg" width="24" alt="profile icon"></span>
+        <span><img src="../images/avatars/a11.jpg" width="24" alt="プロフィールアイコン"></span>
       </button>
-      <h1>チャット</h1>
+      <h1 class="title">チャット</h1>
 
-      <ul>
-        <li>
+      <ul class="post-actions">
+        <li class="post-movie-action">
           <button class="post-movie">
             <img src="../images/icons/camera.svg" width="20" alt="カメラからの投稿">
           </button>
         </li>
-        <li>
+        <li class="post-message-action">
           <button class="post-message">
             <img src="../images/icons/pen.svg" width="20" alt="メッセージの投稿">
           </button>
         </li>
       </ul>
     </header>
+
+    <div class="search-bar">
+      <img src="../images/icons/search.svg" width="20"></img>
+      <input type="search" class="search-input" placeholder="検索">
+    </div>
+
+    <div class="shortcut">
+      <ol class="shortcut-list">
+        <li class="stories-shortcut">
+          <button class="add-stories-shortcut">
+            <img src="../images/icons/plus.svg" width="30" alt="ストーリーズの追加">
+          </button>
+        </li>
+        <li class="users-shortcut">
+          <button class="user-shortcut">
+            <img src="../images/avatars/a1.jpg" width="52" alt="ユーザへのショートカット">
+          </button>
+          <span class="user-shortcut-icon-name">鈴木</span>
+        </li>
+      </ol>
+    </div>
+
+    <ol class="messages">
+      <li>
+        <a href="" class="message">
+          <span class="message-user-icon"><img src="../images/avatars/a2.jpg" width="52" alt="ユーザアイコン"></span>
+          <span class="message-info">
+            <h2 class="message-user-name">佐藤</h2>
+            <span>
+              <span class="message-latest-text">メッセージの内容です</span>
+              <span class="message-update-at">3月26日</span>
+            </span>
+          </span>
+        </a>
+      </li>
+    </ol>
   </main>
   <!--// マークアップここまで -->
 
