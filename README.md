@@ -3,7 +3,7 @@
 - npm install
 - npm start
 - http://localhost:5000/step0/ をブラウザで開く
-- index.html をブラウザで直接開いても確認できます
+- public/step0/index.html をブラウザで直接開いても確認できます
 
 
 # おおまかな作業のマイルストーン
