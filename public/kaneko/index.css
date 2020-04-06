@@ -1,3 +1,60 @@
 @charset "utf-8";
 
 /* CSS */
+
+.header {
+    position: relative;
+    padding: 8px 18px 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    position: absolute;
+    top: 16px;
+    left: 74px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.post-actions {
+    display: flex;
+}
+
+.profile-icon-button {
+    background: #eee;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+}
+
+.post-movie {
+    background: #eee;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+}
+
+.post-message {
+    background: #eee;
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+
+    margin-left: 18px;
+}
