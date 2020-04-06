@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Messenge Applicarion</title>
+    <!-- リセットCSSの読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="../frame.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- 補助フレーム  -->
+    <div class="wrap">
+      <!-- // 補助フレーム  -->
+
+      <!-- マークアップここから -->
+
+      <!-- ヘッダー  -->
+      <header class="header">
+        <button class="profile-icon-button">
+          <img src="../images/avatars/a7.jpg" alt="プロフィール画像" />
+        </button>
+        <h1 class="title">
+          チャット
+        </h1>
+        <ul class="post-message-actions">
+          <li class="post-actions">
+            <button class="post-movie">
+              <img
+                src="../images/icons/camera.svg"
+                alt="動画を投稿する"
+                width="30px"
+              />
+            </button>
+          </li>
+          <li class="post-actions">
+            <button class="post-message">
+              <img
+                src="../images/icons/pen.svg"
+                alt="メッセージを投稿する"
+                width="30px"
+              />
+            </button>
+          </li>
+        </ul>
+      </header>
+      <main>
+        <!-- 検索バー  -->
+        <section class="search">
+          <button class="search-button">
+            <img src="../images/icons/search.svg" alt="検索する" width="30px" />
+          </button>
+          <input type="search" class="search-input" placeholder="検索" />
+        </section>
+
+        <!-- ストーリーズ  -->
+        <section class="stories">
+          <ul class="stories-ulist">
+            <li class="stories-list">
+              <button class="add-stories-button">
+                <span class="add-stories">
+                  <img
+                    src="../images/icons/plus.svg"
+                    alt="ストーリーズに追加する"
+                    width="30px"
+                  />
+                </span>
+                <span class="add-stories">ストーリーズに追加</span>
+              </button>
+            </li>
+            <li class="stories-list">
+              <button class="friend-stories-button">
+                <span class="friend-stories">
+                  <img src="../images/avatars/a3.jpg" alt="プロフィール画像" />
+                </span>
+                <span class="friend-stories">哲也</span>
+              </button>
+            </li>
+          </ul>
+        </section>
+
+        <!-- メッセージ  -->
+        <section class="message">
+          <ul class="message-ulist">
+            <li class="message-list">
+              <button class="messages-button">
+                <span class="message-profile-image">
+                  <img src="../images/avatars/a4.jpg" alt="プロフィール画像" />
+                </span>
+                <span class="message-name">早乙女智也</span>
+                <span class="message-chat">メッセージ</span>
+                <span class="message-date">3月26日</span>
+              </button>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <footer></footer>
+      <!--// マークアップここまで -->
+
+      <!-- デザイン確認用レイヤー コメントアウトすると半透明にデザインを重ねて確認できます
+  <p class="design-layer"><img src="../design.png" alt="" width="414"></p>
+  -->
+      <!-- 補助フレーム  -->
+    </div>
+    <!-- // 補助フレーム  -->
+  </body>
+</html>
