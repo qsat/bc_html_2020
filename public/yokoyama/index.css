@@ -2,6 +2,94 @@
 
 /* CSS */
 
-li {
-    display: inline;
+* {
+    margin: 3px;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.header {
+    height: 36px;
+    padding: 12px 12px 12px 76px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    position: relative
+
+
+}
+
+.title{
+    position: absolute;
+    top: 14px;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+header .profile-icon-button{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    overflow: hidden;
+    padding: 0px;
+    outline: none;
+    border-radius: 50%;
+}
+
+.post-movie{
+    background: #f0f0f0;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 4px;
+    left: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+
+}
+.post-message{
+    background: #f0f0f0;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 4px;
+    left: 350px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+}
+.search{
+    display: -webkit-flex;
+    display: flex;
+}
+.friends{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px;
+}
+
+.add-friends{
+    height: 75px;
+    width: 75px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.footer{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 15px;
+}
+.talk-friends{
+    height: 100px;
+    width: 400px;
+}
+.footer_action{
+    height: 100px;
+    width: 200px;
 }
