@@ -1,3 +1,58 @@
 @charset "utf-8";
 
 /* CSS */
+
+/* ヘッダー */
+
+header {
+  height: 36px;
+  padding: 12px 12px 12px 76px;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-icon-button {
+  position: absolute;
+  top: 4px;
+  left: 20px;
+
+  width: 50px;
+  height: 50px;
+
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 0;
+  outline: none;
+}
+
+header h1 {
+  color: #000;
+  font-weight: bold;
+  font-size: 26px;
+  padding-left: 10px;
+}
+
+.post-message-actions {
+  display: flex;
+}
+
+.post-actions button {
+  background-color: rgba(238, 238, 238);
+
+  margin: 10px;
+
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 25px;
+  overflow: hidden;
+  padding: 10px;
+  outline: none;
+}
