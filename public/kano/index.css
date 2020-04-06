@@ -1,0 +1,66 @@
+/* ヘッダー */
+header {
+    background-color: white;
+    height: 96px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 2);
+    
+    display: flex;
+    /* justify-content: center; */
+}
+
+/* 自分のアイコンボタン */
+header .profile-icon-button {
+    position: relative;
+    left: 4px;
+    top: 0px;
+    
+    border: 0px;
+    -webkit-appearance: none;
+}
+
+/* 自分のアイコン */
+header .profile-icon {
+    border-radius: 50px;
+}
+
+header .post-message-actions {
+    display: flex; /* 横並び */
+    list-style: none; /* 黒丸の削除 */
+    position: absolute;
+    right: 14px;
+}
+
+/* 動画ボタンと新規メッセージボタン */
+header .post-message-actions button {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+header .title {
+    margin-left: 12px;
+
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+/* ストーリー追加アイコン */
+.story-add-icon {
+    border-radius: 50px;
+}
+
+/* ストーリユーザアイコン */
+.story-user-icon {
+    border-radius: 50px;
+}
+
+/* メッセージ表示欄のアイコン */
+.message-icon {
+    border-radius: 50px;
+}
+
