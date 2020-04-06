@@ -18,22 +18,78 @@
   <!-- マークアップここから -->
   <header class="header">
     <button class="profile-icon-button">
-      <span class="avater"></span><img src="../images/avatars/a1.jpg" alt=""></span>
+      <span class="avater"></span><img src="../images/avatars/a1.jpg" width="50" alt=""></span>
     </button>
     <h1 class="title">チャット</h1>
     <ul class="header__actions actions">
       <li class="actions__action">
-        <button class="post-movie"><img src="../images/icons/camera.svg" alt="post-movie" width="20"></button>
+        <button class="post-movie"><img src="../images/icons/camera.svg" alt="映像の投稿" width="20"></button>
       </li>
       <li class="actions__action">
-        <button class="post-message"><img src="../images/icons/pen.svg" alt="post-message" width="16"></button>
+        <button class="post-message"><img src="../images/icons/pen.svg" alt="新規メッセージ作成" width="16"></button>
       </li>
     </ul>
   </header>
-  </div>
+
   <main>
-  Hello!!
+    <section class="search_section">
+      <input type="search" class="search_string">
+    </section>
+
+    <section class="story">
+      <ol class="story_list">
+        <li class="story_create">
+          <button class="create_story_button">
+            <span class="story_create_button">
+              <img src="../images/icons/plus.svg" width="60" alt="新規ストーリー作成">
+            </span>
+            <span class="story_create_button_label">ストーリー作成</span>
+          </button>
+        </li>
+        <li class="users_list">
+          <button class="user">
+            <span class="user_icon">
+              <img src="../images/avatars/a2.jpg" width="60" alt="">
+            </span>
+            <span class="user_name">user_a2</span>
+          </button>
+        </li>
+      </ol>
+    </section>
+
+    <section class="chat_room">
+      <ol class="chatroom">
+        <li>
+          <a href="#" class="chatroom">
+            <span class="chat_avater_icon">
+              <img src="../images/avatars/a3.jpg" alt="a3さん" width="60">
+            </span>
+            <span class="chat_user_data">
+              <span class="chat_user_name">A3</span>
+              <span class="chat_user_message">いろはにほへとちりぬるを</span>
+              <span class="chat_user_date">3月26日</span>
+            </span>
+          </a>
+        </li>
+      </ol>
+    </section>
   </main>
+
+  <footer>
+    <nav class="navigation">
+      <button class="footer_unread_button">
+        <span class="button_unread_count">8</span>
+        <img src="../images/icons/message.svg" alt="未読数" width="30">
+        <span class="button_unread_label">チャット</span>
+      </button>
+
+      <button class="footer_friends_button">
+        <span class="button_friend_count">7</span>
+        <img src="../images/icons/friends.svg" alt="友人の数" width="30">
+        <span class="button_unread_label">友達</span>
+      </button>
+    </nav>
+  </footer>
   <!--// マークアップここまで -->
 
   <!-- デザイン確認用レイヤー コメントアウトすると半透明にデザインを重ねて確認できます -->
