@@ -1,56 +1,126 @@
--<!DOCTYPE html>
--<html lang="ja">
--<head>
--  <meta charset="UTF-8">
--  <meta name="viewport" content="width=device-width">
--  <title>Messenge Applicarion</title>
--  <!-- リセットCSSの読み込み -->
--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
--  <!-- CSSの読み込み -->
--  <link rel="stylesheet" href="../frame.css">
--  <link rel="stylesheet" href="./index.css">
--</head>
--<body>
--  <!-- 補助フレーム  -->
--  <div class="wrap">
--  <!-- // 補助フレーム  -->
--
--  <!-- マークアップここから -->
--  <header>
--    <div class="header-left">
--      <button class="post-movie">
--        <img src="../images/avatars/a7.jpg" alt="自己プロフィール画像" width="20" />
--      </button>
--    </div>
--    <div class="header-center">
--      <h1 class="header-title">チャット</h1>
--    </div>
--    <div class="header-right">
--      <ul class="post-message-actions">
--        <li class="post-movie-action">
--          <!-- 動画撮影 -->
--          <button class="post-movie">
--            <img src="../images/icons/camera.svg" alt="動画撮影" width="20" />
--          </button>
--        </li>
--        <li class="post-message-action">
--          <!-- 新規メッセージ -->
--          <button class="post-message">
--            <img src="../images/icons/message.svg" alt="新規メッセージ" width="20" />
--          </button>
--        </li>
--      </ul>
--    </div>
--  </header>
--  Hello!!
--  <!--// マークアップここまで -->
--
--  <!-- デザイン確認用レイヤー コメントアウトすると半透明にデザインを重ねて確認できます 
--  <p class="design-layer"><img src="../design.png" alt="" width="414"></p>
--  -->
--  <!-- 補助フレーム  -->
--  </div>
--  <!-- // 補助フレーム  -->
--</body>
--</html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Messenge Applicarion</title>
+  <!-- リセットCSSの読み込み -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+  <!-- CSSの読み込み -->
+  <link rel="stylesheet" href="../frame.css">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <!-- 補助フレーム  -->
+  <div class="wrap">
+  <!-- // 補助フレーム  -->
+
+  <!-- マークアップここから -->
+  <header>
+    <div class="header-left">
+      <button class="post-movie">
+        <img src="../images/avatars/a7.jpg" alt="自己プロフィール画像" width="20" />
+      </button>
+    </div>
+    <div class="header-center">
+      <h1 class="header-title">チャット</h1>
+    </div>
+    <div class="header-right">
+      <ul class="post-message-actions">
+        <li class="post-movie-action">
+          <!-- 動画撮影 -->
+          <button class="post-movie">
+            <img src="../images/icons/camera.svg" alt="動画撮影" width="20" />
+          </button>
+        </li>
+        <li class="post-message-action">
+          <!-- 新規メッセージ -->
+          <button class="post-message">
+            <img src="../images/icons/message.svg" alt="新規メッセージ" width="20" />
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+    <main>
+        <div class="main">
+            <!-- 検索Box -->
+            <div class="search-box">
+                <input type="search" class="search" placeholder="検索" />
+            </div>
+            <!-- ストーリーBox -->
+            <div class="story-box">
+                <ul class="story-list">
+                    <li class="create-story-action">
+                        <button class="create-story">
+                            <img src="../images/icons/plus.svg" alt="ストーリを作成する" width="20" />
+                        </button>
+                        <span class="create-story-label">ストーリー作成</span>
+                    </li>
+                    <li class="story-show-action">
+                        <button class="show-story">
+                            <img src="../images/avatars/a1.jpg" alt="" width="20" />
+                        </button>
+                        <span class="show-story-label">ユーザー1</span>
+                    </li>
+                    <li class="story-show-action">
+                        <button class="show-story">
+                            <img src="../images/avatars/a2.jpg" alt="" width="20" />
+                        </button>
+                        <span class="show-story-label">ユーザー2</span>
+                    </li>
+                    <li class="story-show-action">
+                        <button class="show-story">
+                            <img src="../images/avatars/a3.jpg" alt="" width="20" />
+                        </button>
+                        <span class="show-story-label">ユーザー3</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- チャットBox -->
+            <div class="chat-box">
+                <ul class="chat-list">
+                    <li class="chat-actions">
+                        <a href="#" class="enter-chat-action">
+                            <span class="chat-avator">
+                                <img src="../images/avatars/a1.jpg" alt="" width="50" />
+                            </span>
+                            <span class="chat-user-name">ユーザー1</span>
+                            <span class="chat-content">
+                                <span class="chat-message">メッセージです。</span>
+                                <span class="chat-message-date">2020/04/06</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="chat-actions">
+                        <a href="#" class="enter-chat-action">
+                            <span class="chat-avator">
+                                <img src="../images/avatars/a2.jpg" alt="" width="50" />
+                            </span>
+                            <span class="chat-user-name">ユーザー2</span>
+                            <span class="chat-content">
+                                <span class="chat-message">メッセージです。</span>
+                                <span class="chat-message-date">2020/04/06</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+    </main>
+  Hello!!
+  <!--// マークアップここまで -->
+
+  <!-- デザイン確認用レイヤー コメントアウトすると半透明にデザインを重ねて確認できます 
+  <p class="design-layer"><img src="../design.png" alt="" width="414"></p>
+  -->
+  <!-- 補助フレーム  -->
+  </div>
+  <!-- // 補助フレーム  -->
+</body>
+</html>
 
