@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Messenge Applicarion</title>
+    <!-- リセットCSSの読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="../frame.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <!-- 補助フレーム  -->
+    <div class="wrap">
+      <!-- // 補助フレーム  -->
+
+      <!-- マークアップここから -->
+      <header>
+        <button class="profile-icon-button">
+          <img
+            src="../images/avatars/a4.jpg"
+            width="35"
+            alt="プロフィール画像"
+          />
+        </button>
+        <h1 class="title">
+          チャット
+        </h1>
+        <ul class="post-message-actions">
+          <li>
+            <button class="post-movie">
+              <img
+                src="../images/icons/camera.svg"
+                width="24"
+                height="24"
+                alt="カメラ起動"
+              />
+            </button>
+          </li>
+          <li>
+            <button class="post-message">
+              <img
+                src="../images/icons/message.svg"
+                width="24"
+                height="24"
+                alt="チャット開始"
+              />
+            </button>
+          </li>
+        </ul>
+      </header>
+
+      <section class="search">
+        <img src="../images/icons/search.svg" width="24" alt="検索" />
+        <input type="text" placeholder="検索する" />
+      </section>
+
+      <section class="stories">
+        <ol>
+          <li class="create-story">
+            <button>
+              <img
+                src="../images/icons/plus.svg"
+                width="24"
+                alt="ストーリー投稿"
+              />
+              <p>ストーリー...</p>
+            </button>
+          </li>
+          <li class="friend-story">
+            <button>
+              <img src="../images/avatars/a5.jpg" width="24" alt="友達の投稿" />
+              <span class="online-status">●</span>
+              <p class="story-friend-name">Yamane</p>
+            </button>
+          </li>
+          <li class="friend-story">
+            <button>
+              <img src="../images/avatars/a6.jpg" width="24" alt="友達の投稿" />
+              <span class="online-status">●</span>
+              <p class="story-friend-name">Kadono</p>
+            </button>
+          </li>
+          <li class="friend-story">
+            <button>
+              <img src="../images/avatars/a7.jpg" width="24" alt="友達の投稿" />
+              <span class="online-status">●</span>
+              <p class="story-friend-name">Okamoto</p>
+            </button>
+          </li>
+          <li class="friend-story">
+            <button>
+              <img src="../images/avatars/a8.jpg" width="24" alt="友達の投稿" />
+              <span class="online-status">●</span>
+              <p class="story-friend-name">CVB</p>
+            </button>
+          </li>
+        </ol>
+      </section>
+
+      <section class="chat-list">
+        <ol>
+          <li>
+            <button>
+              <div class="chat-list-pic">
+                <img src="../images/avatars/a3.jpg" alt="友達とのチャット" />
+              </div>
+              <div class="chat-list-content">
+                <p class="chat-friend-name">
+                  Okamoto <span class="new-icon">NEW</span>
+                </p>
+                <p class="chat-content">
+                  <span class="chat-message">チャットの内容の一部...</span>
+                  <span class="message-date">3月27日</span>
+                </p>
+              </div>
+              <div class="read-status">
+                <span class="unread">●</span>
+              </div>
+            </button>
+          </li>
+        </ol>
+      </section>
+      <!--// マークアップここまで -->
+
+      <!-- デザイン確認用レイヤー コメントアウトすると半透明にデザインを重ねて確認できます
+  <p class="design-layer"><img src="../design.png" alt="" width="414"></p>
+  -->
+      <!-- 補助フレーム  -->
+    </div>
+    <!-- // 補助フレーム  -->
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Messenge Applicarion</title>
+    <!-- リセットCSSの読み込み -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="../frame.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- 補助フレーム  -->
+    <div class="wrap">
+        <!-- // 補助フレーム  -->
+
+        <!-- マークアップここから -->
+        <!-- ヘッダ -->
+        <header>
+            <!-- プロフ -->
+            <ul class="header">
+                <li>
+                    <button class="profile-icon-button" type="button">
+                        <span>
+                            <img src="../images/avatars/a11.jpg" alt="プロフィールアイコン" width="32" height="32"/>
+                        </span>
+                    </button>
+                </li>
+                <!-- タイトル -->
+                <li>
+                    <h1 class="title">チャット</h1>
+                </li>
+                <!-- 動画撮影 -->
+                <li>
+                    <button class="button.post-movie" type="button">
+                        <span>
+                            <img src="../images/icons/camera.svg" alt="カメラ起動" width="32" height="32"/>
+                        </span>
+                    </button>
+                </li>
+
+                <!--　新規メッセージ　-->
+                <li>
+                    <button class="button.post-message" type="button">
+                        <span>
+                            <img src="../images/icons/message.svg" alt="メッセージを作成" width="32" height="32"/>
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </header>
+        <!-- ヘッダここまで -->
+        <!-- メイン(検索フォーム、友達追加、トーク) -->
+        <main>
+            <div>
+                <ul class="search">
+                    <li>
+                        <img src="../images/icons/search.svg" alt="検索" width="16" height="16" />
+                    </li>
+                    <li>
+                        <input type="search" name="search form" size="60">
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="friends">
+                    <li>
+                        <button class="button.add-friends" type="button">
+                            <span>
+                                <img src="../images/icons/plus.svg" width="28" alt="新規ストーリー">
+                                <p>ストーリー作成</p>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="button.add-friends" type="button">
+                            <span>
+                                <img src="../images/avatars/a4.jpg" alt="友達4" width="32" height="32"/>
+                                <p>友達1</p>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="button.add-friends" type="button">
+                            <span>
+                                <img src="../images/avatars/a5.jpg" alt="友達5" width="32" height="32"/>
+                                <p>友達2</p>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="talk">
+                    <li>
+                        <button class="button.talk-friends" type="button" width="90%">
+                            <span>
+                                <img src="../images/avatars/a6.jpg" alt="友達6" width="" height="32"/>
+                                トーク内容
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="talk">
+                    <li>
+                        <button class="button.talk-friends" type="button" width="90%">
+                            <span>
+                                <img src="../images/avatars/a7.jpg" alt="友達7" width="" height="32"/>
+                                トーク内容
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <!-- メインここまで -->
+
+        <!--　フッタ -->
+        <nav>
+            <button>
+              <img src="../images/icons/message.svg" width="64" alt="">
+              <span>チャット</span>
+            </button>
+            <button>
+              <img src="../images/icons/friends.svg" width="64" alt="">
+              <span>友達</span>
+            </button>
+        </nav>
+
+        <!--// マークアップここまで -->
+
+        <!-- デザイン確認用レイヤー コメントアウトすると半透明にデザインを重ねて確認できます 
+        <p class="design-layer"><img src="../design.png" alt="" width="414"></p>
+        -->
+        <!-- 補助フレーム  -->
+    </div>
+    <!-- // 補助フレーム  -->
+</body>
+
+</html>
