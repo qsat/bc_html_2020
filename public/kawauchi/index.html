@@ -33,7 +33,80 @@
       </li>
     </ul>
   </header>
+
+  <div class="contents">
+    <!--  検索バー   -->
+    <div class="search-box">
+      <img src="../images/icons/search.svg" alt="検索アイコン">
+      <input type="text" id="search-form" value="" placeholder="検索">
+    </div>
+    <!--  ここまで検索バー   -->
+
+    <!--  ストーリー   -->
+    <div class="stories">
+      <div class="add-my-story">
+        <button>
+          <img src="../images/icons/plus.svg" alt="画像を追加">
+        </button>
+        <span class="post-story">ストーリー</span>
+      </div>
+      
+      <ol class="friends-story-list">
+        <li class="story-item">
+          <div class="view-friend-stories">
+            <button>
+              <img src="../images/avatars/a2.jpg" alt="A2さんのストーリー">
+              <span class="status-active"></span>
+            </button>
+            <span class="story-name">哲哉</span>
+          </div>
+
+      <!--
+        繰り返し  class="view-friend-stories"
+        -->
+      </ol>
+    </div>
+    <!--  ここまでストーリー   -->
+
+    <!--  メッセージ   -->
+    <div class="view-messages">
+
+      <ol class="friend-messages-list">
+        
+        <li class="message-item">
+          <div class="friend-message">
+            <a href="*">
+              <img src="../images/avatars/a3.jpg" alt="早乙女智也">
+              <span class="message-name">早乙女智也</span>
+              <p class="shortened-message">新しいFacebookの友達、早乙女...・3月26日</p>
+              <span class="new-friends-tag">NEW</span>
+            </a>
+          </div>
+        </li>
+      
+
+        <!--
+          繰り返し  class="view-messages"
+        -->
+      </ol>
+    </div>
+    <!--  ここまでメッセージ   -->
+  </div>
   <!--// マークアップここまで -->
+  <footer>
+    <ul class="footer-icons">
+      <li class="chat-icon">
+        <img src="../images/icons/chat.svg" alt="チャット画面">
+        <span class="notification-count">8</span>
+      </li>
+
+      <li class="contact-icon">
+        <img src="../images/icons/contact.svg" alt="連絡先画面">
+        <span class="notification-count">7</span>
+      </li>
+    </ul>
+
+  </footer>
 
   <!-- デザイン確認用レイヤー コメントアウトすると半透明にデザインを重ねて確認できます 
   <p class="design-layer"><img src="../design.png" alt="" width="414"></p>
