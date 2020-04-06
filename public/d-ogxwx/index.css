@@ -13,32 +13,37 @@ header {
     align-items: center;
 }
 
-header .header-left {
+.header-left {
     width: 20%;
     display: flex;
 }
 
-header .header-left .profile {
+.header-left .profile {
     border: none;
+}
+
+.header-left .profile .profile-image {
     border-radius: 25px;
+    width: 50px;
+    height: 50px;
 }
 
 
-header .header-center {
+.header-center {
     width: 50%;
     display: flex;
 }
 
-header .header-right {
+.header-right {
     width: 30%;
     display: flex;
 }
 
-header .header-right ul {
+.header-right .post-message-actions {
     display:flex;
 }
 
-header .header-right ul .post-movie {
+.header-right .post-movie {
     border: none;
     border-radius: 25px;
     width: 50px;
@@ -47,7 +52,7 @@ header .header-right ul .post-movie {
     background-color: #F5F5F5;
 }
 
-header .header-right ul .post-message {
+.header-right .post-message {
     border: none;
     border-radius: 25px;
     width: 50px;
@@ -57,19 +62,11 @@ header .header-right ul .post-message {
 }
 
 
-header .header-right {
+.header-right {
     float: right;
 }
 
-
-header .header-left img {
-    border: none;
-    border-radius: 25px;
-    width: 50px;
-    height: 50px;
-}
-
-header h1 {
+.header-title {
     font-weight: bold;
     font-size: 26px;
 }
