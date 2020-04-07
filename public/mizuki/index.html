@@ -1,80 +1,127 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Messenge Applicarion</title>
-  <!-- リセットCSSの読み込み -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
-  <!-- CSSの読み込み -->
-  <link rel="stylesheet" href="../frame.css">
-  <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-  <!-- 補助フレーム  -->
-  <div class="wrap">
-  <!-- // 補助フレーム  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Messenge Applicarion</title>
+    <!-- リセットCSSの読み込み -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+    />
+    <!-- CSSの読み込み -->
+    <link rel="stylesheet" href="../frame.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- 補助フレーム  -->
+    <div class="wrap">
+      <!-- // 補助フレーム  -->
 
-  <!-- マークアップここから -->
-  <header>
-    <button class="profile-icon-button"><span><img height="25" width="25" src="../images/avatars/a2.jpg" alt="プロフィール"></span> </button>
-    <h1 class="header-title">chat</h1>
-    <div class="post-message-actions">
-    <button class="post-movie"><span><img width="25" height="25"  src="../images/icons/camera.svg" alt="動画投稿"></span></button>
-    <button class="post-message"><span><img width="25" height="25" src="../images/icons/pen.svg" alt="テキスト投稿"></span></button>
-    </div>
-  </header> 
-  <div class="contents-search">
-    <div class="search-box">
-        <span class="search-icon"><img width="25" height="25" src="../images/icons/search.svg" alt="検索"></span>
-        <span class="search-textinput"><input type="text" placeholder="検索"></span>
-    </div>
-  </div>
-  <div class="contents-story">
-    <ol class="list-story">
-      <li class="post-story-list">
-        <button class="post-story">
-          <img width="25" height="25" src="../images/icons/plus.svg" alt="">
-          <span>ストーリーズを追加</span>
-        </button>
-      </li>
-      <li class="get-story-list">
-        <button class="get-story">
-          <img width="25" height="25" src="../images/avatars/a1.jpg" alt="">
-          <span class="story-user-status"></span>
-          <span class="story-user-name">メアリー</span>
-        </button>
-      </li>
-    </ol>
-  </div>
-  <div class="contents-message">
-    <ol class="message-user">
-      <li class="get-message-list">
-        <button class="get-message">
-          <span class="message-user-icon">
-            <img src="../images/avatars/a1.jpg" alt="">
-            <span class="message-user-status"></span>
-          </span>
-          <h2 class="message-name">メアリー</h2>
-          <h3 class="message-text">
-            <p class="message-text-conversation">
-                今日はいい天気ですね
-            </p>
-            <p class="message-text-date">４月４日</p>
-          </h3>
-        </button>
-      </li>
-    </ol>
+      <!-- マークアップここから -->
+      <header class="header">
+        <h1 class="header-title">
+          <button class="profile-icon-button">
+            <span
+              ><img
+                height="50"
+                width="50"
+                src="../images/avatars/a2.jpg"
+                alt="プロフィール"
+            /></span>
+          </button>
+          <span class="header-title">チャット</span>
+        </h1>
+        <div class="post-message-actions">
+          <button class="post-movie">
+            <span
+              ><img
+                width="20"
+                height="20"
+                src="../images/icons/camera.svg"
+                alt="動画投稿"
+            /></span>
+          </button>
+          <button class="post-message">
+            <span
+              ><img
+                width="20"
+                height="20"
+                src="../images/icons/pen.svg"
+                alt="テキスト投稿"
+            /></span>
+          </button>
+        </div>
+      </header>
+      <div class="contents-search">
+        <input type="search" class="search-textinput" placeholder="検索" />
+      </div>
+      <div class="contents-story">
+        <ol class="list-story">
+          <li class="post-story-list">
+            <button class="post-story">
+              <span class="post-story-icon">
+                <img
+                  width="50"
+                  height="50"
+                  src="../images/icons/plus.svg"
+                  alt=""
+                />
+              </span>
+              <span>追加</span>
+            </button>
+          </li>
+          <li class="get-story-list">
+            <button class="get-story">
+              <span class="get-story-icon">
+                <img
+                  width="50"
+                  height="50"
+                  src="../images/avatars/a1.jpg"
+                  alt=""
+                />
+              </span>
 
-  </div>
+              <span class="story-user-status"></span>
+              <span class="story-user-name">メアリー</span>
+            </button>
+          </li>
+        </ol>
+      </div>
+      <div class="contents-message">
+        <ol class="message-user">
+          <li class="get-message-list">
+            <button class="get-message">
+              <span class="message-user-icon">
+                <img
+                  width="64"
+                  height="64"
+                  src="../images/avatars/a1.jpg"
+                  alt=""
+                />
+                <span class="message-user-status"></span>
+              </span>
+              <div class="message-main">
+                <h2 class="message-name">メアリー</h2>
+                <h3 class="message-text">
+                  <p class="message-text-conversation">
+                    今日はいい天気ですね,お日柄もよくううううううううううううううう
+                  </p>
+                  <time class="message-text-date" datetime="4-4">４月４日</time>
+                </h3>
+              </div>
+            </button>
+          </li>
+        </ol>
+      </div>
 
-  <!--// マークアップここまで -->
+      <!--// マークアップここまで -->
 
-  <!-- デザイン確認用レイヤー コメントアウトすると半透明にデザインを重ねて確認できます 
+      <!-- デザイン確認用レイヤー コメントアウトすると半透明にデザインを重ねて確認できます 
   <p class="design-layer"><img src="../design.png" alt="" width="414"></p>
   -->
-  <!-- 補助フレーム  -->
-  </div>
-  <!-- // 補助フレーム  -->
-</body>
+      <!-- 補助フレーム  -->
+    </div>
+    <!-- // 補助フレーム  -->
+  </body>
 </html>
