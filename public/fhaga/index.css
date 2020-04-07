@@ -57,10 +57,9 @@
     height: 38px;
     overflow: hidden;
     border-radius: 20px;
-    color: gray;
+    background: #eee;
 
     appearance: none;
-    background: white;
     border: none;
     outline: none;
 
